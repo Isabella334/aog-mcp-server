@@ -2,29 +2,381 @@
   "HP-1234": {
     "model": "Boeing 737-800",
     "alerts": [
-      {"date": "2026-08-20", "code": "ENG1-OILP-04", "component": "Engine 1 - Oil pressure sensor", "description": "Oil pressure reading below threshold for 3 minutes during cruise."},
-      {"date": "2026-08-25", "code": "ENG1-OILP-04", "component": "Engine 1 - Oil pressure sensor", "description": "Oil pressure sensor triggered low-pressure warning on climb."},
-      {"date": "2026-09-02", "code": "ENG1-OILP-04", "component": "Engine 1 - Oil pressure sensor", "description": "Oil pressure sensor fault recurred, warning persisted 8 minutes."}
+      {
+        "date": "2026-08-20",
+        "code": "ENG1-OILP-04",
+        "component": "Engine 1 - Oil pressure sensor",
+        "description": "Oil pressure reading below threshold for 3 minutes during cruise."
+      },
+      {
+        "date": "2026-08-25",
+        "code": "ENG1-OILP-04",
+        "component": "Engine 1 - Oil pressure sensor",
+        "description": "Oil pressure sensor triggered low-pressure warning on climb."
+      },
+      {
+        "date": "2026-09-02",
+        "code": "ENG1-OILP-04",
+        "component": "Engine 1 - Oil pressure sensor",
+        "description": "Oil pressure sensor fault recurred, warning persisted 8 minutes."
+      }
     ]
   },
   "HP-5678": {
     "model": "Airbus A320",
     "alerts": [
-      {"date": "2026-08-15", "code": "CAB-TEMP-11", "component": "Cabin - Temperature control unit", "description": "Cabin temperature control unresponsive in zone 2."}
+      {
+        "date": "2026-08-15",
+        "code": "CAB-TEMP-11",
+        "component": "Cabin - Temperature control unit",
+        "description": "Cabin temperature control unresponsive in zone 2."
+      }
     ]
   },
   "HP-9012": {
     "model": "Embraer E190",
     "alerts": [
-      {"date": "2026-07-30", "code": "HYD2-LOWP-02", "component": "Hydraulic system 2 - Low pressure", "description": "Hydraulic system 2 pressure dropped below minimum during taxi."},
-      {"date": "2026-08-10", "code": "HYD2-LOWP-02", "component": "Hydraulic system 2 - Low pressure", "description": "Hydraulic system 2 low pressure warning, resolved after reset."},
-      {"date": "2026-08-28", "code": "AVIO-GPS-07", "component": "Avionics - GPS receiver", "description": "GPS receiver 1 intermittent signal loss."}
+      {
+        "date": "2026-07-30",
+        "code": "HYD2-LOWP-02",
+        "component": "Hydraulic system 2 - Low pressure",
+        "description": "Hydraulic system 2 pressure dropped below minimum during taxi."
+      },
+      {
+        "date": "2026-08-10",
+        "code": "HYD2-LOWP-02",
+        "component": "Hydraulic system 2 - Low pressure",
+        "description": "Hydraulic system 2 low pressure warning, resolved after reset."
+      },
+      {
+        "date": "2026-08-28",
+        "code": "AVIO-GPS-07",
+        "component": "Avionics - GPS receiver",
+        "description": "GPS receiver 1 intermittent signal loss."
+      }
     ]
   },
   "HP-3344": {
     "model": "Boeing 737-800",
     "alerts": [
-      {"date": "2026-09-01", "code": "CAB-LIGHT-02", "component": "Cabin - Reading light circuit", "description": "Row 14 reading light circuit not responding."}
+      {
+        "date": "2026-09-01",
+        "code": "CAB-LIGHT-02",
+        "component": "Cabin - Reading light circuit",
+        "description": "Row 14 reading light circuit not responding."
+      }
+    ]
+  },
+  "HP-7788": {
+    "model": "Airbus A320neo",
+    "alerts": [
+      {
+        "date": "2026-08-18",
+        "code": "AVIO-TCAS-03",
+        "component": "Avionics - TCAS transponder",
+        "description": "TCAS transponder failed self-test on power-up."
+      },
+      {
+        "date": "2026-08-27",
+        "code": "AVIO-TCAS-03",
+        "component": "Avionics - TCAS transponder",
+        "description": "TCAS transponder intermittent reply dropout during climb."
+      },
+      {
+        "date": "2026-09-04",
+        "code": "AVIO-TCAS-03",
+        "component": "Avionics - TCAS transponder",
+        "description": "TCAS transponder self-test failure recurred."
+      }
+    ]
+  },
+  "HP-2211": {
+    "model": "Boeing 737 MAX 8",
+    "alerts": [
+      {
+        "date": "2026-09-03",
+        "code": "ENG-FIRE-01",
+        "component": "Engine 2 - Fire detection loop",
+        "description": "Fire detection loop A on Engine 2 reported a continuity fault during pre-flight BITE test."
+      }
+    ]
+  },
+  "HP-6655": {
+    "model": "Embraer E195",
+    "alerts": []
+  },
+  "HP-4499": {
+    "model": "Airbus A321",
+    "alerts": [
+      {
+        "date": "2026-07-01",
+        "code": "CAB-SEAT-05",
+        "component": "Cabin - Seat recline mechanism",
+        "description": "Row 22C seat recline mechanism stuck, reported by cabin crew."
+      }
+    ]
+  },
+  "HP-8801": {
+    "model": "Boeing 787-8",
+    "alerts": [
+      {
+        "date": "2026-08-22",
+        "code": "FUEL-PUMP-02",
+        "component": "Fuel system - Center tank pump 2",
+        "description": "Center fuel pump 2 pressure fluctuation on climb."
+      },
+      {
+        "date": "2026-08-30",
+        "code": "FUEL-PUMP-02",
+        "component": "Fuel system - Center tank pump 2",
+        "description": "Center fuel pump 2 pressure fluctuation recurred, longer duration."
+      },
+      {
+        "date": "2026-09-05",
+        "code": "FUEL-PUMP-02",
+        "component": "Fuel system - Center tank pump 2",
+        "description": "Center fuel pump 2 fault triggered low-fuel-pressure caution."
+      }
+    ]
+  },
+  "HP-3390": {
+    "model": "Airbus A319",
+    "alerts": [
+      {
+        "date": "2026-08-19",
+        "code": "LDG-GEAR-03",
+        "component": "Landing gear - Nose gear steering",
+        "description": "Nose gear steering sluggish response reported by crew."
+      }
+    ]
+  },
+  "HP-5512": {
+    "model": "ATR 72-600",
+    "alerts": [
+      {
+        "date": "2026-08-24",
+        "code": "FLT-AIL-01",
+        "component": "Flight controls - Left aileron actuator",
+        "description": "Left aileron actuator intermittent binding during taxi checks."
+      },
+      {
+        "date": "2026-09-01",
+        "code": "FLT-AIL-01",
+        "component": "Flight controls - Left aileron actuator",
+        "description": "Left aileron actuator binding recurred, logged by maintenance."
+      }
+    ]
+  },
+  "HP-6620": {
+    "model": "Boeing 737-800",
+    "alerts": [
+      {
+        "date": "2026-08-29",
+        "code": "ELEC-GEN2-06",
+        "component": "Electrical - Generator 2",
+        "description": "Generator 2 load-sharing fault, reset in flight."
+      }
+    ]
+  },
+  "HP-7745": {
+    "model": "Airbus A320",
+    "alerts": [
+      {
+        "date": "2026-09-02",
+        "code": "APU-START-02",
+        "component": "APU - Start sequence",
+        "description": "APU failed to start on first attempt, second attempt normal."
+      }
+    ]
+  },
+  "HP-2298": {
+    "model": "Embraer E190",
+    "alerts": [
+      {
+        "date": "2026-08-12",
+        "code": "IFE-SEAT-14",
+        "component": "Cabin - IFE screen row 18",
+        "description": "Row 18 IFE screen unresponsive."
+      }
+    ]
+  },
+  "HP-4467": {
+    "model": "Boeing 737 MAX 8",
+    "alerts": []
+  },
+  "HP-9933": {
+    "model": "Airbus A321neo",
+    "alerts": [
+      {
+        "date": "2026-08-16",
+        "code": "HYD1-LOWP-01",
+        "component": "Hydraulic system 1 - Low pressure",
+        "description": "Hydraulic system 1 low pressure caution during descent."
+      },
+      {
+        "date": "2026-08-23",
+        "code": "HYD1-LOWP-01",
+        "component": "Hydraulic system 1 - Low pressure",
+        "description": "Hydraulic system 1 low pressure caution recurred."
+      },
+      {
+        "date": "2026-09-06",
+        "code": "HYD1-LOWP-01",
+        "component": "Hydraulic system 1 - Low pressure",
+        "description": "Hydraulic system 1 low pressure caution, third occurrence."
+      }
+    ]
+  },
+  "HP-1150": {
+    "model": "Embraer E195",
+    "alerts": [
+      {
+        "date": "2026-08-05",
+        "code": "LAV-DRAIN-01",
+        "component": "Cabin - Aft lavatory drain",
+        "description": "Aft lavatory drain slow, reported by cabin crew."
+      }
+    ]
+  },
+  "HP-6689": {
+    "model": "Boeing 787-8",
+    "alerts": [
+      {
+        "date": "2026-08-27",
+        "code": "AVIO-FMS-09",
+        "component": "Avionics - Flight management system",
+        "description": "FMS database load error on preflight."
+      }
+    ]
+  },
+  "HP-3321": {
+    "model": "Airbus A320neo",
+    "alerts": []
+  },
+  "HP-8877": {
+    "model": "Boeing 737-800",
+    "alerts": [
+      {
+        "date": "2026-06-15",
+        "code": "WIFI-AP-02",
+        "component": "Cabin - WiFi access point 2",
+        "description": "WiFi access point 2 offline, reported by passengers."
+      }
+    ]
+  },
+  "HP-2244": {
+    "model": "Airbus A321",
+    "alerts": [
+      {
+        "date": "2026-08-31",
+        "code": "ENG2-VIBR-03",
+        "component": "Engine 2 - Vibration monitor",
+        "description": "Engine 2 vibration monitor reading above normal range on takeoff."
+      },
+      {
+        "date": "2026-09-04",
+        "code": "ENG2-VIBR-03",
+        "component": "Engine 2 - Vibration monitor",
+        "description": "Engine 2 vibration monitor reading elevated again, trend confirmed."
+      }
+    ]
+  },
+  "HP-5566": {
+    "model": "Embraer E190",
+    "alerts": [
+      {
+        "date": "2026-09-03",
+        "code": "FLT-RUD-02",
+        "component": "Flight controls - Rudder trim",
+        "description": "Rudder trim actuator slow response noted by crew."
+      }
+    ]
+  },
+  "HP-7712": {
+    "model": "Boeing 737 MAX 8",
+    "alerts": [
+      {
+        "date": "2026-08-21",
+        "code": "ELEC-BATT-01",
+        "component": "Electrical - Main battery",
+        "description": "Main battery capacity test below threshold."
+      }
+    ]
+  },
+  "HP-4488": {
+    "model": "Airbus A319",
+    "alerts": [
+      {
+        "date": "2026-08-09",
+        "code": "CAB-GALLEY-03",
+        "component": "Cabin - Forward galley oven",
+        "description": "Forward galley oven 1 not heating."
+      }
+    ]
+  },
+  "HP-9911": {
+    "model": "ATR 72-600",
+    "alerts": [
+      {
+        "date": "2026-08-14",
+        "code": "LDG-BRAKE-05",
+        "component": "Landing gear - Brake wear sensor",
+        "description": "Brake wear sensor #3 reading inconsistent."
+      }
+    ]
+  },
+  "HP-6634": {
+    "model": "Boeing 787-8",
+    "alerts": [
+      {
+        "date": "2026-08-26",
+        "code": "FUEL-VALVE-04",
+        "component": "Fuel system - Crossfeed valve",
+        "description": "Fuel crossfeed valve failed to close fully on test."
+      },
+      {
+        "date": "2026-09-01",
+        "code": "FUEL-VALVE-04",
+        "component": "Fuel system - Crossfeed valve",
+        "description": "Fuel crossfeed valve fault recurred during pre-flight check."
+      }
+    ]
+  },
+  "HP-3355": {
+    "model": "Airbus A320",
+    "alerts": [
+      {
+        "date": "2026-05-20",
+        "code": "AVIO-RADALT-02",
+        "component": "Avionics - Radio altimeter",
+        "description": "Radio altimeter 2 intermittent fault, old entry outside default lookback window."
+      }
+    ]
+  },
+  "HP-8899": {
+    "model": "Embraer E195",
+    "alerts": []
+  },
+  "HP-2266": {
+    "model": "Boeing 737-800",
+    "alerts": [
+      {
+        "date": "2026-08-13",
+        "code": "HYD2-LEAK-04",
+        "component": "Hydraulic system 2 - Fluid leak",
+        "description": "Minor hydraulic system 2 fluid leak observed at reservoir seal."
+      }
+    ]
+  },
+  "HP-5588": {
+    "model": "Airbus A320neo",
+    "alerts": [
+      {
+        "date": "2026-09-06",
+        "code": "APU-EGT-01",
+        "component": "APU - Exhaust gas temperature",
+        "description": "APU EGT reading trending high on last two starts."
+      }
     ]
   }
 }

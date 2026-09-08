@@ -1,44 +1,233 @@
 [
   {
     "part_name": "Oil pressure sensor ENG1",
-    "compatible_models": ["Boeing 737-800"],
+    "compatible_models": [
+      "Boeing 737-800"
+    ],
     "quantity": 2,
     "location": "Hangar 2, Shelf B-14",
     "status": "available"
   },
   {
     "part_name": "Cabin temperature control unit",
-    "compatible_models": ["Airbus A320"],
+    "compatible_models": [
+      "Airbus A320"
+    ],
     "quantity": 0,
     "location": "Hangar 1, Shelf C-02",
     "status": "out_of_stock"
   },
   {
     "part_name": "Hydraulic pressure sensor (system 2)",
-    "compatible_models": ["Embraer E190"],
+    "compatible_models": [
+      "Embraer E190"
+    ],
     "quantity": 0,
     "location": "Hangar 3, Shelf A-08",
     "status": "in_transit"
   },
   {
     "part_name": "GPS receiver unit",
-    "compatible_models": ["Embraer E190", "Boeing 737-800"],
+    "compatible_models": [
+      "Embraer E190",
+      "Boeing 737-800"
+    ],
     "quantity": 1,
     "location": "Hangar 2, Shelf D-05",
     "status": "available"
   },
   {
     "part_name": "Reading light circuit board",
-    "compatible_models": ["Boeing 737-800", "Airbus A320"],
+    "compatible_models": [
+      "Boeing 737-800",
+      "Airbus A320"
+    ],
     "quantity": 5,
     "location": "Hangar 1, Shelf E-11",
     "status": "available"
   },
   {
     "part_name": "Hydraulic pressure sensor (generic)",
-    "compatible_models": ["Embraer E190", "Boeing 737-800", "Airbus A320"],
+    "compatible_models": [
+      "Embraer E190",
+      "Boeing 737-800",
+      "Airbus A320"
+    ],
     "quantity": 3,
     "location": "Hangar 3, Shelf A-09",
+    "status": "available"
+  },
+  {
+    "part_name": "TCAS transponder unit",
+    "compatible_models": [
+      "Airbus A320neo"
+    ],
+    "quantity": 0,
+    "location": "Hangar 2, Shelf F-02",
+    "status": "out_of_stock"
+  },
+  {
+    "part_name": "TCAS transponder (refurbished)",
+    "compatible_models": [
+      "Airbus A320neo",
+      "Airbus A321"
+    ],
+    "quantity": 2,
+    "location": "Hangar 2, Shelf F-03",
+    "status": "available"
+  },
+  {
+    "part_name": "Engine fire detection loop",
+    "compatible_models": [
+      "Boeing 737 MAX 8"
+    ],
+    "quantity": 1,
+    "location": "Hangar 3, Shelf B-01",
+    "status": "available"
+  },
+  {
+    "part_name": "Seat recline mechanism",
+    "compatible_models": [
+      "Airbus A321",
+      "Airbus A320neo"
+    ],
+    "quantity": 4,
+    "location": "Hangar 1, Shelf E-14",
+    "status": "available"
+  },
+  {
+    "part_name": "Center tank fuel pump",
+    "compatible_models": [
+      "Boeing 787-8"
+    ],
+    "quantity": 0,
+    "location": "Hangar 3, Shelf C-01",
+    "status": "out_of_stock"
+  },
+  {
+    "part_name": "Center tank fuel pump (OEM exchange)",
+    "compatible_models": [
+      "Boeing 787-8"
+    ],
+    "quantity": 1,
+    "location": "Hangar 3, Shelf C-02",
+    "status": "available"
+  },
+  {
+    "part_name": "Nose gear steering actuator",
+    "compatible_models": [
+      "Airbus A319",
+      "Airbus A320",
+      "Airbus A321"
+    ],
+    "quantity": 1,
+    "location": "Hangar 3, Shelf D-05",
+    "status": "available"
+  },
+  {
+    "part_name": "Aileron actuator",
+    "compatible_models": [
+      "ATR 72-600"
+    ],
+    "quantity": 0,
+    "location": "Hangar 3, Shelf D-09",
+    "status": "in_transit"
+  },
+  {
+    "part_name": "Generator control unit",
+    "compatible_models": [
+      "Boeing 737-800",
+      "Boeing 737 MAX 8"
+    ],
+    "quantity": 2,
+    "location": "Hangar 2, Shelf G-01",
+    "status": "available"
+  },
+  {
+    "part_name": "APU starter motor",
+    "compatible_models": [
+      "Airbus A320",
+      "Airbus A320neo"
+    ],
+    "quantity": 1,
+    "location": "Hangar 2, Shelf G-04",
+    "status": "available"
+  },
+  {
+    "part_name": "Hydraulic system 1 pressure sensor",
+    "compatible_models": [
+      "Airbus A321neo"
+    ],
+    "quantity": 0,
+    "location": "Hangar 3, Shelf A-10",
+    "status": "out_of_stock"
+  },
+  {
+    "part_name": "Engine vibration monitor",
+    "compatible_models": [
+      "Airbus A321",
+      "Airbus A321neo"
+    ],
+    "quantity": 1,
+    "location": "Hangar 3, Shelf B-05",
+    "status": "available"
+  },
+  {
+    "part_name": "Rudder trim actuator",
+    "compatible_models": [
+      "Embraer E190",
+      "Embraer E195"
+    ],
+    "quantity": 2,
+    "location": "Hangar 3, Shelf D-11",
+    "status": "available"
+  },
+  {
+    "part_name": "Main battery",
+    "compatible_models": [
+      "Boeing 737 MAX 8",
+      "Boeing 737-800"
+    ],
+    "quantity": 3,
+    "location": "Hangar 2, Shelf G-08",
+    "status": "available"
+  },
+  {
+    "part_name": "Fuel crossfeed valve",
+    "compatible_models": [
+      "Boeing 787-8"
+    ],
+    "quantity": 0,
+    "location": "Hangar 3, Shelf C-06",
+    "status": "out_of_stock"
+  },
+  {
+    "part_name": "Fuel crossfeed valve (refurbished)",
+    "compatible_models": [
+      "Boeing 787-8"
+    ],
+    "quantity": 1,
+    "location": "Hangar 3, Shelf C-07",
+    "status": "available"
+  },
+  {
+    "part_name": "Radio altimeter unit",
+    "compatible_models": [
+      "Airbus A320",
+      "Airbus A320neo"
+    ],
+    "quantity": 1,
+    "location": "Hangar 2, Shelf F-06",
+    "status": "available"
+  },
+  {
+    "part_name": "Hydraulic reservoir seal kit",
+    "compatible_models": [
+      "Boeing 737-800",
+      "Boeing 737 MAX 8"
+    ],
+    "quantity": 4,
+    "location": "Hangar 3, Shelf A-11",
     "status": "available"
   }
 ]
