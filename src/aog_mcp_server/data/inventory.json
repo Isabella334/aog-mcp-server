@@ -1,0 +1,44 @@
+[
+  {
+    "part_name": "Oil pressure sensor ENG1",
+    "compatible_models": ["Boeing 737-800"],
+    "quantity": 2,
+    "location": "Hangar 2, Shelf B-14",
+    "status": "available"
+  },
+  {
+    "part_name": "Cabin temperature control unit",
+    "compatible_models": ["Airbus A320"],
+    "quantity": 0,
+    "location": "Hangar 1, Shelf C-02",
+    "status": "out_of_stock"
+  },
+  {
+    "part_name": "Hydraulic pressure sensor (system 2)",
+    "compatible_models": ["Embraer E190"],
+    "quantity": 0,
+    "location": "Hangar 3, Shelf A-08",
+    "status": "in_transit"
+  },
+  {
+    "part_name": "GPS receiver unit",
+    "compatible_models": ["Embraer E190", "Boeing 737-800"],
+    "quantity": 1,
+    "location": "Hangar 2, Shelf D-05",
+    "status": "available"
+  },
+  {
+    "part_name": "Reading light circuit board",
+    "compatible_models": ["Boeing 737-800", "Airbus A320"],
+    "quantity": 5,
+    "location": "Hangar 1, Shelf E-11",
+    "status": "available"
+  },
+  {
+    "part_name": "Hydraulic pressure sensor (generic)",
+    "compatible_models": ["Embraer E190", "Boeing 737-800", "Airbus A320"],
+    "quantity": 3,
+    "location": "Hangar 3, Shelf A-09",
+    "status": "available"
+  }
+]

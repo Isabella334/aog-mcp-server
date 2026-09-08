@@ -1,0 +1,30 @@
+{
+  "HP-1234": {
+    "model": "Boeing 737-800",
+    "alerts": [
+      {"date": "2026-08-20", "code": "ENG1-OILP-04", "component": "Engine 1 - Oil pressure sensor", "description": "Oil pressure reading below threshold for 3 minutes during cruise."},
+      {"date": "2026-08-25", "code": "ENG1-OILP-04", "component": "Engine 1 - Oil pressure sensor", "description": "Oil pressure sensor triggered low-pressure warning on climb."},
+      {"date": "2026-09-02", "code": "ENG1-OILP-04", "component": "Engine 1 - Oil pressure sensor", "description": "Oil pressure sensor fault recurred, warning persisted 8 minutes."}
+    ]
+  },
+  "HP-5678": {
+    "model": "Airbus A320",
+    "alerts": [
+      {"date": "2026-08-15", "code": "CAB-TEMP-11", "component": "Cabin - Temperature control unit", "description": "Cabin temperature control unresponsive in zone 2."}
+    ]
+  },
+  "HP-9012": {
+    "model": "Embraer E190",
+    "alerts": [
+      {"date": "2026-07-30", "code": "HYD2-LOWP-02", "component": "Hydraulic system 2 - Low pressure", "description": "Hydraulic system 2 pressure dropped below minimum during taxi."},
+      {"date": "2026-08-10", "code": "HYD2-LOWP-02", "component": "Hydraulic system 2 - Low pressure", "description": "Hydraulic system 2 low pressure warning, resolved after reset."},
+      {"date": "2026-08-28", "code": "AVIO-GPS-07", "component": "Avionics - GPS receiver", "description": "GPS receiver 1 intermittent signal loss."}
+    ]
+  },
+  "HP-3344": {
+    "model": "Boeing 737-800",
+    "alerts": [
+      {"date": "2026-09-01", "code": "CAB-LIGHT-02", "component": "Cabin - Reading light circuit", "description": "Row 14 reading light circuit not responding."}
+    ]
+  }
+}
