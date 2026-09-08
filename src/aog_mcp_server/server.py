@@ -1,9 +1,11 @@
 """AOG Smart Assistant MCP server.
 
-Exposes two tools over the Model Context Protocol (stdio transport):
+Exposes four tools over the Model Context Protocol (stdio transport):
 
 - get_aircraft_health: alert history + recurrence + criticality for a tail number.
 - check_hangar_inventory: spare-part availability lookup, with alternatives.
+- list_aircraft: every tracked tail number, with a quick 30-day health summary.
+- list_inventory_parts: every hangar part, optionally filtered by status/model.
 
 Data is served from bundled JSON files (data/aircraft_alerts.json,
 data/inventory.json) that simulate a maintenance telemetry system and a
@@ -58,7 +60,7 @@ def get_aircraft_health(aircraft_id: str, days_lookback: int = 30) -> dict:
     affected component, and flags a "recurring pattern" when the same
     component logs 2 or more alerts within that window. Criticality is
     derived from the alert code (see criticality.py) using an
-    airworthiness-first scale: alta (high) / media (medium) / baja (low).
+    airworthiness-first scale: high / medium / low.
 
     Args:
         aircraft_id: Tail number, e.g. "HP-1234".
@@ -190,6 +192,53 @@ def check_hangar_inventory(part_name: str, aircraft_model: str | None = None) ->
         "status": match["status"],
         "alternatives": alternatives,
     }
+
+
+@mcp.tool()
+def list_aircraft() -> dict:
+    """List every aircraft tail number tracked by this server.
+
+    Includes each aircraft's model and a quick 30-day health summary
+    (alerts found, criticality, recurring-pattern flag), so a host can
+    show a fleet overview without querying each tail number individually.
+
+    Returns:
+        A dict with `count` and `aircraft` (a list of summaries).
+    """
+    aircraft_db = _load_json("aircraft_alerts.json")
+    fleet = []
+    for tail, record in aircraft_db.items():
+        health = get_aircraft_health(tail)
+        fleet.append(
+            {
+                "aircraft_id": tail,
+                "model": record.get("model"),
+                "alerts_last_30_days": health["alerts_found"],
+                "criticality": health["criticality"],
+                "recurring_pattern": health["recurring_pattern"],
+            }
+        )
+    return {"count": len(fleet), "aircraft": fleet}
+
+
+@mcp.tool()
+def list_inventory_parts(status: str | None = None, aircraft_model: str | None = None) -> dict:
+    """List hangar inventory parts, optionally filtered.
+
+    Args:
+        status: Optional filter - "available", "out_of_stock", or "in_transit".
+        aircraft_model: Optional filter - only parts compatible with this model.
+
+    Returns:
+        A dict with `count` and `parts` (the matching inventory items).
+    """
+    inventory = _load_json("inventory.json")
+    filtered = inventory
+    if status:
+        filtered = [p for p in filtered if p["status"] == status]
+    if aircraft_model:
+        filtered = [p for p in filtered if aircraft_model in p.get("compatible_models", [])]
+    return {"count": len(filtered), "parts": filtered}
 
 
 def main() -> None:
